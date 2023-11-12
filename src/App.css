@@ -1,0 +1,402 @@
+/* Dracula Theme for CSS */
+
+/* Base colors */
+:root {
+  --dracula-background: rgb(31, 32, 34);
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #cdd2d3;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #77c4c9;
+  --dracula-green: #86a958;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff64bc;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
+
+.container{
+    display: flex;
+    scrollbar-gutter: auto;
+    height: fit-content;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    padding: 10px;   
+    background-color: var(--dracula-background);
+}
+
+/* ToDo.css */
+.todo {
+  background-color:var(--dracula-background);
+    display: inline-block;
+    height: fit-content; /* Display ToDo items inline */
+    width: 23rem; /* Adjust the width as needed */
+    margin:3rem;
+    border: 1px solid var(--dracula-current-line);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+    overflow-wrap: break-word;
+}
+
+.toDo-upper-section {
+    height: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+
+.toDo-lower-section {
+    padding: 10px;
+    border-top: 1px solid var(--dracula-current-line);
+    text-align: left;
+    overflow-wrap: break-word;
+    color: var(--dracula-purple);
+}
+
+
+.delete-button {
+    background-color: transparent;
+    color: var(--dracula-foreground);
+    border: 1px solid;
+    border-color: var(--dracula-red);;
+    padding: 0.5rem;
+    position: relative;
+    top: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.delete-button:hover {
+    background-color: var(--dracula-red);
+}
+
+/* AddTodo.css */
+/* Style the form and input area */
+#newToDoForm {
+    font-size: inherit;
+    align-items: center;
+    width: 20rem;
+    margin-right: 50px;
+}
+
+textarea {
+    background-color: transparent;
+    color: var(--dracula-purple);
+    font-size: inherit;
+    width: 100%;
+    padding: 10px;
+    border: 10px solid var(--dracula-current-line);
+    border-radius: 30px;
+    resize:none;
+    box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+#addButton {
+   padding-right:.6rem;
+   background-color: transparent;
+   color: var(--dracula-green);
+   border: 1px solid;
+   border-color: var(--dracula-green);
+   border-radius: 50%;
+   padding: 0.5rem;
+   cursor: pointer;
+   font-size: inherit;
+}
+
+#addButton:hover {
+   background-color : var(--dracula-green);
+   color:  var(--dracula-foreground);
+}
+
+ul {
+   list-style-type:none;
+   padding :0px; 
+}
+
+
+
+/* weather
+
+/* WeatherWidget.css */
+/* Estilos para el widget de clima basados en el estilo de la aplicación de tareas */
+.weather-widget {
+    background-color:var(--dracula-background);
+    display: inline-block;
+    width: 21rem;
+    height: fit-content;
+    margin:3rem;
+    border: 1px solid var(--dracula-current-line);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+    color: var(--dracula-comment);
+  }
+  
+  .weather-upper-section {
+    height: 15rem;
+    border-radius: 20px;
+    color: var(--dracula-foreground);
+    padding: 10px;
+  }
+  
+  .weather-lower-section {
+    padding: 10px;
+    border-top: 1px solid var(--dracula-current-line);
+  }
+  
+  h1 {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: var(--dracula-green);
+      margin-bottom: .5rem;
+      font-size: 2rem;
+  }
+  
+  img {
+      width:100px;
+      height:auto;
+  }
+  
+  .weather-widget p {
+      margin: .5rem;
+  }
+
+  
+
+.news-feed {
+  background-color:var(--dracula-background);
+  display: block;
+  width: 25rem;
+  height: 55rem;
+  margin-top: 2rem;
+  overflow-y: scroll;
+  scrollbar-gutter: auto;
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.news-feed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-feed li {
+  border-bottom: 1px solid var(--dracula-current-line);
+  padding: 10px;
+}
+
+.news-feed a {
+  display: block;
+  font-weight:normal;
+  color:var(--dracula-green);
+  text-decoration: none;
+}
+
+.news-feed p {
+  margin-top: 5px;
+  color:var(--dracula-comment);
+}
+
+::-webkit-scrollbar{
+  background-color:transparent;
+}
+
+/*Currency*/
+
+.currency {
+  background-color:var(--dracula-background);
+  color: var(--dracula-comment);
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin:3rem;
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.currency strong {
+  color: var(--dracula-green);
+  padding-top: 1.5rem;
+}
+
+.currency-rates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  column-gap: 2rem;
+}
+
+#loading-currencies {
+  color:#86a958
+}
+
+.calendar{
+  display: block;
+  position: absolute;
+  right: 0%;
+}
+
+.react-calendar {
+  background-color:var(--dracula-background);
+  color: var(--dracula-comment);
+  width: 25rem;
+  height: 25rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.349);
+}
+
+.react-calendar button {
+  background-color: #86a958;
+  height: 3rem;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color:#bd93f9;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color:#bd93f9;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color:brown;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font: inherit;
+  font-size: 0.833em;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__tile--now {
+  background: #ffff76;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #1087ff;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+
